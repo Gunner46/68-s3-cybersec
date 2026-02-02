@@ -1,4 +1,15 @@
-service:
+version: '3.8'
+
+services:
+  s3db:
+    image: postgres:latest
+    container_name: 68-s3-database
+    environment:
+      POSTGRES_USER: "kittithat"
+      POSTGRES_PASSWORD: "254646"
+      POSTGRES_DB: "s3_kittithat"
+    ports:
+      - "55432:5432"service:
  s3db:
    imaage: postgres:latest
    container_name: 68-s3-database
