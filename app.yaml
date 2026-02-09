@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  s3app:
+    image: nginx:alpine
+    container_name: 68-s3-app
+    ports:
+      - "8080:80"
